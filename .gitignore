@@ -1,2 +1,6 @@
 *.pyc
 __pycache__/
+.env
+myenv/
+/cipher
+/03. Thuc hanh Bao mat thong tin nang cao.pdf
