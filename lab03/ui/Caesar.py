@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file './lab03/ui/Caesar.ui'
+# Form implementation generated from reading ui file '.\ui\Caesar.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -10,6 +10,8 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+import os
+os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = '../platforms'
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -32,7 +34,7 @@ class Ui_MainWindow(object):
         self.label_2.setGeometry(QtCore.QRect(20, 40, 66, 19))
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(0, 220, 66, 19))
+        self.label_3.setGeometry(QtCore.QRect(20, 220, 51, 19))
         self.label_3.setObjectName("label_3")
         self.label_4 = QtWidgets.QLabel(self.centralwidget)
         self.label_4.setGeometry(QtCore.QRect(10, 330, 81, 19))
@@ -51,7 +53,7 @@ class Ui_MainWindow(object):
         self.btnEncrypt.setObjectName("btnEncrypt")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 24))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
