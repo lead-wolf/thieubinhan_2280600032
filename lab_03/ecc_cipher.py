@@ -25,7 +25,7 @@ class MyApp(QMainWindow):
             else:
                 print("Error while calling API")
         except requests.exceptions.RequestException as e:
-            print("Error: %s" % e.message)
+            print(f"Error: {e}")
     
     def call_api_sign(self):
         url = "http://127.0.0.1:5000/api/ecc/sign"
@@ -45,7 +45,7 @@ class MyApp(QMainWindow):
             else:
                 print("Error while calling API")
         except requests.exceptions.RequestException as e:
-            print("Error: %s" % e.message)
+            print(f"Error: {e}")
     
     def call_api_verify(self):
         url = "http://127.0.0.1:5000/api/ecc/verify"
@@ -70,7 +70,7 @@ class MyApp(QMainWindow):
             else:
                 print("Error while calling API")
         except requests.exceptions.RequestException as e:
-            print("Error: %s" % e.message)
+            print(f"Error: {e}")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
